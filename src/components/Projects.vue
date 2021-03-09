@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>Projects</h3>
-    <ul>
+    <ul class="list">
       <li @click="emitFilter('')">(All)</li>
       <li
         v-for="project in projects"
@@ -60,5 +60,9 @@ h3 {
   padding: 0.5rem;
   margin: 1rem;
   font-weight: bolder;
+}
+
+.list {
+  cursor: pointer;
 }
 </style>
